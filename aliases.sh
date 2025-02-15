@@ -42,7 +42,7 @@ eval "$(pyenv virtualenv-init -)"
 Update and Upgrade
 System (I am using multiple)###################################################################
 
-alias update_fedora='sudo dnf upgrade --refresh -y && sudo dnf autoremove -y && sudo dnf clean all && flatpak update -y'
+alias update_fedora='sudo dnf upgrade --refresh -y && sudo dnf autoremove -y && sudo dnf install remove-retired-packages && remove-retired-packages && sudo dnf remove --duplicates && sudo dnf clean all && sudo rpm --rebuilddb && flatpak update -y'
 
 alias update_arch='sudo pacman -Syu --noconfirm && sudo pacman -Rns $(pacman -Qdtq) --noconfirm && flatpak update -y'
 
