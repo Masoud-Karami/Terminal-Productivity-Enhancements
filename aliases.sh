@@ -37,3 +37,16 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=0
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+
+Update and Upgrade
+System (I am using multiple)###################################################################
+
+alias update_fedora='sudo dnf upgrade --refresh -y && sudo dnf autoremove -y && sudo dnf clean all && flatpak update -y'
+
+alias update_arch='sudo pacman -Syu --noconfirm && sudo pacman -Rns $(pacman -Qdtq) --noconfirm && flatpak update -y'
+
+alias update_centos='sudo yum update -y && sudo yum upgrade -y && sudo yum autoremove -y && sudo yum clean all && sudo yum check && flatpak update -y'
+
+alias update_ubuntu='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean && sudo apt autoclean && sudo snap refresh && flatpak update -y && sudo dpkg --configure -a && sudo apt install -f'
+
