@@ -57,7 +57,6 @@ google-chrome-stable \
 --process-per-site \
 --enable-low-end-device-mode \
 --disable-background-networking \
---disable-site-isolation-trials \
 --disable-renderer-backgrounding \
 --disable-background-timer-throttling \
 --disable-backgrounding-occluded-windows \
@@ -65,32 +64,24 @@ google-chrome-stable \
 --enable-gpu-rasterization \
 --ignore-gpu-blocklist \
 --enable-zero-copy \
---disable-features=UseSkiaRenderer \
 --disable-component-update \
 --disable-crash-reporter \
 --disable-extensions \
 --disable-translate \
---disable-sync-preferences \
 --disable-save-password-bubble \
 --enable-quic \
---force-dark-mode \
 --no-pings \
 --no-first-run \
 --enable-fast-unload \
 --mute-audio \
 --disable-notifications \
 --disable-logging \
---disable-domain-reliability \
 --disable-offline-auto-reload \
 --disable-offline-auto-reload-visible-only \
---disable-gesture-typing \
---disable-text-input-focus-manager \
---disable-smooth-scrolling \
 --disable-hang-monitor \
---disable-in-process-stack-traces \
 --disable-client-side-phishing-detection \
---no-experiments \
 --disable-site-isolation-trials \
---disable-backgrounding-occluded-windows
-
+--disable-backgrounding-occluded-windows \
+--disable-features=BackForwardCache,TranslateUI \
+--enable-features=WebContentsForceMaxRefreshRate
 
