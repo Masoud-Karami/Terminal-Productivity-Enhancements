@@ -40,7 +40,8 @@ eval "$(pyenv virtualenv-init -)"
 
 
 Update and Upgrade
-System (I am using multiple)###################################################################
+System (I am using multiple)
+###################################################################
 
 alias update_fedora='sudo dnf upgrade --refresh -y && sudo dnf autoremove -y && sudo dnf install remove-retired-packages && remove-retired-packages && sudo dnf remove --duplicates && sudo dnf clean all && sudo rpm --rebuilddb && flatpak update -y'
 
@@ -49,4 +50,47 @@ alias update_arch='sudo pacman -Syu --noconfirm && sudo pacman -Rns $(pacman -Qd
 alias update_centos='sudo yum update -y && sudo yum upgrade -y && sudo yum autoremove -y && sudo yum clean all && sudo yum check && flatpak update -y'
 
 alias update_ubuntu='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean && sudo apt autoclean && sudo snap refresh && flatpak update -y && sudo dpkg --configure -a && sudo apt install -f'
+
+###################################################################
+# open chrome from terminal smoothly running with muliple tabs
+google-chrome-stable \
+--process-per-site \
+--enable-low-end-device-mode \
+--disable-background-networking \
+--disable-site-isolation-trials \
+--disable-renderer-backgrounding \
+--disable-background-timer-throttling \
+--disable-backgrounding-occluded-windows \
+--disk-cache-size=104857600 \
+--enable-gpu-rasterization \
+--ignore-gpu-blocklist \
+--enable-zero-copy \
+--disable-features=UseSkiaRenderer \
+--disable-component-update \
+--disable-crash-reporter \
+--disable-extensions \
+--disable-translate \
+--disable-sync-preferences \
+--disable-save-password-bubble \
+--enable-quic \
+--force-dark-mode \
+--no-pings \
+--no-first-run \
+--enable-fast-unload \
+--mute-audio \
+--disable-notifications \
+--disable-logging \
+--disable-domain-reliability \
+--disable-offline-auto-reload \
+--disable-offline-auto-reload-visible-only \
+--disable-gesture-typing \
+--disable-text-input-focus-manager \
+--disable-smooth-scrolling \
+--disable-hang-monitor \
+--disable-in-process-stack-traces \
+--disable-client-side-phishing-detection \
+--no-experiments \
+--disable-site-isolation-trials \
+--disable-backgrounding-occluded-windows
+
 
