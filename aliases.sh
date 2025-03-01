@@ -52,6 +52,8 @@ alias update_centos='sudo yum update -y && sudo yum upgrade -y && sudo yum autor
 alias update_ubuntu='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean && sudo apt autoclean && sudo snap refresh && flatpak update -y && sudo dpkg --configure -a && sudo apt install -f'
 
 ###################################################################
+A Beginners Guide on Things To Do After Installing Ubuntu. (https://gist.github.com/bkanhu/827a7c0e250e30fa78109bf7120aeca5)
+
 # open chrome from terminal smoothly running with muliple tabs
 google-chrome-stable \
 --process-per-site \
