@@ -42,13 +42,18 @@ function venvs() {
     python3 -m venv "$1" && source "$1"/bin/activate && pip3 install --upgrade pip
 }
 ```
-
-### Shell & Navigation Enhancements
 ```sh
+### Shell & Navigation Enhancements
+
 alias tbash='open -a TextEdit ~/.bashrc && open -a TextEdit ~/.zshrc'
 alias nbash='nano ~/.bash_profile'
 alias sbash='source ~/.bash_profile && source ~/.zshrc'
 alias ls='ls --color=auto'
+alias update_ubuntu='sudo apt update && sudo apt upgrade && sudo apt-get autoclean &&  sudo apt-get clean &&  sudo apt-get autoremove
+
+
+
+'
 function cd {
     builtin cd "$@" && ls -F
 }

@@ -49,7 +49,7 @@ alias update_arch='sudo pacman -Syu --noconfirm && sudo pacman -Rns $(pacman -Qd
 
 alias update_centos='sudo yum update -y && sudo yum upgrade -y && sudo yum autoremove -y && sudo yum clean all && sudo yum check && flatpak update -y'
 
-alias update_ubuntu='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean && sudo apt autoclean && sudo snap refresh && flatpak update -y && sudo dpkg --configure -a && sudo apt install -f'
+alias update_ubuntu='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean && sudo apt autoclean && sudo snap refresh && flatpak update -y && sudo dpkg --configure -a && sudo apt install -f && fwupdmgr refresh --force \ && fwupdmgr get-updates \ && fwupdmgr update'
 
 ###################################################################
 A Beginners Guide on Things To Do After Installing Ubuntu. \url{https://gist.github.com/bkanhu/827a7c0e250e30fa78109bf7120aeca5}
