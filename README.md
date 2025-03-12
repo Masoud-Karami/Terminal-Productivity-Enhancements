@@ -42,18 +42,13 @@ function venvs() {
     python3 -m venv "$1" && source "$1"/bin/activate && pip3 install --upgrade pip
 }
 ```
-```sh
-### Shell & Navigation Enhancements
 
+### Shell & Navigation Enhancements
+```sh
 alias tbash='open -a TextEdit ~/.bashrc && open -a TextEdit ~/.zshrc'
 alias nbash='nano ~/.bash_profile'
 alias sbash='source ~/.bash_profile && source ~/.zshrc'
 alias ls='ls --color=auto'
-alias update_ubuntu='sudo apt update && sudo apt upgrade && sudo apt-get autoclean &&  sudo apt-get clean &&  sudo apt-get autoremove
-
-
-
-'
 function cd {
     builtin cd "$@" && ls -F
 }
@@ -85,3 +80,13 @@ eval "$(pyenv virtualenv-init -)"
 ## License
 This configuration is open-source. Feel free to modify and share it as needed.
 
+
+
+# ComputeCanada resource management
+
+1. Generating an SSH Key
+    1.1 check to see if you already have one 
+    $s -al ~/.ssh  or $$ ls -al ~/.ssh #
+    1.2 genrate one
+    ```ssh-keygen -t ed25519```
+    1.2 
