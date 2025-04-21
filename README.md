@@ -114,7 +114,7 @@ ssh-keygen -t ed25519
 
 ---
 
-# 📘 How to Install Zotero on Fedora
+# 📘 How to Install Zotero on Fedora (21 Apr 2025)
 
 ## Manual Installation (Method 1)
 
